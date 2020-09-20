@@ -27,7 +27,6 @@ public class Model {
 
 	}
 
-
 	/**
 	 * add ChangeListener into the listener ArrayList
 	 * @param ChangeListener c

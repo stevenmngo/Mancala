@@ -4,8 +4,6 @@
  * 
  * @author Steven Ngo
  * 
- *         Project Mancala Game Professor S. Kim CS151 copyright May 05, 2018
- *
  */
 
 public class Demo {

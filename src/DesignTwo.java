@@ -20,6 +20,7 @@ public class DesignTwo implements Design {
         return new RoundRectangle2D.Double(0, 0, pitWidth, pitHeight, 30, 30);
     }
 
+    
     /**
      * Getter the stone shape
       * @return Shape

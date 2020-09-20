@@ -1,9 +1,9 @@
 import java.awt.Color;
 import java.awt.Shape;
-
 /** 
  * Design interface for using strategy pattern
  */
+
 public interface Design {
 
 	public Shape getPitShape();

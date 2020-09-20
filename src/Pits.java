@@ -25,6 +25,7 @@ public class Pits implements Icon {
 
     }
 
+    
     /**
      * Get the Icon Shape given the number of stone
      * @param numStonw

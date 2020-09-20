@@ -6,8 +6,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 
-
-/** 
+/**
  * View class contain all Java Swing component to create User Interface
  */
 public class View {
@@ -23,8 +22,8 @@ public class View {
     private JButton undoButton;
 
     /**
-     * Constructor for the View class
-     * View also serve as controller
+     * Constructor for the View class View also serve as controller
+     * 
      * @param Model model
      */
     public View(Model model) {
@@ -47,7 +46,9 @@ public class View {
     }
 
     /**
-     * Setup function call the Wellcome frame and set up the game styles and pit value.
+     * Setup function call the Wellcome frame and set up the game styles and pit
+     * value.
+     * 
      * @param JFrame fram
      */
     public void setUp(JFrame fram) {
@@ -109,14 +110,14 @@ public class View {
             }
         });
 
-        // Controller add action for stone number 
+        // Controller add action for stone number
         chooseThree.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 numberOfStone = 3;
             }
         });
 
-        // Controller add action for stone number 
+        // Controller add action for stone number
         chooseFour.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 numberOfStone = 4;
@@ -129,7 +130,7 @@ public class View {
                 design = new DesignOne();
             }
         });
-        
+
         // Controller add action for design
         chooseDesign_2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -192,7 +193,7 @@ public class View {
 
         container.add(pa1, BorderLayout.WEST);
 
-        // Controller add mouse listener for the pits 
+        // Controller add mouse listener for the pits
         for (int i = 0; i < 12; i++) {
             int s = i;
             Pits pit = new Pits(design, pitOrder(i), model.getStoneInPits(pitOrder(i)));
@@ -241,7 +242,7 @@ public class View {
         container.add(pitsBoard, BorderLayout.CENTER);
 
         undoButton = new JButton("Undo: 3");
-        
+
         // Controller add action for the undo button, get undo count from model
         undoButton.addActionListener(new ActionListener() {
             @Override
